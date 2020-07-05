@@ -1,0 +1,36 @@
+ALGORITHM check
+VAR
+    str :STRING;
+    i,j,l,c,v:integer;
+BEGIN
+    write("taper une chaine de caracters");
+    read(str);
+    l:=length(str);
+    FOR i FROM 0 TO l STEP i++  DO
+    
+    //caracter
+        IF (str[i]!=' ') THEN
+            j:=j+1;
+
+
+            //word
+            IF (str[i]=' ') THEN
+                c=c+1;
+            
+            END_IF
+        END_IF
+
+
+        //Touver les voyels
+        IF (ch[i]=('a'||'A'||'e'||'E')||'i'||'I'||'o'||'O'||'u'||'U') DO
+        v:=v+1;
+        END_IF
+    END_FOR
+    
+    END_WHILE
+    write('nombre de caracters'j)
+    write('nombre de words'c);
+    write('nmbre de voyels et'v);
+
+
+END
